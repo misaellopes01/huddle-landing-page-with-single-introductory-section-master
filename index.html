@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <meta name="theme-color" content="#292929">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/Custom-Icon-Design-Mono-Business-2-Coffee.ico"> 
-  <title>Online Birthday</title>
+  <meta name="theme-color" content="hsl(257, 40%, 49%)">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> 
+  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <link rel="stylesheet" href="./assets/style.css">
   <link rel="stylesheet" href="./assets/responsive.css">
@@ -14,63 +14,37 @@
 <body>
   <header>
     <figure>
-      <img src="./images/undraw_happy_birthday_s72n.svg" alt="">
+      <img src="./images/logo.svg" alt="">
     </figure>
-    <h1>Online Birthday</h1>
   </header>
   <main>
     <div class="image"></div>
     <div class="content">
-      <h2>
-        Margarida Vanilda Dos Santos Bandua
-      </h2>
+      <h1>
+        Build The Community Your Fans Will Love
+      </h1>
       <p>
-        Hoje, 23 de Agosto, pertence à ti. Pela graça de Deus completas mais um ano de vida. Que o SENHOR continue guardando você e te abençoe em todas as áreas. <em>I can say that you've marked my life! </em><br><br> Não direi muita coisa...  
+        Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+    Create connections with your users as you engage in genuine discussion.
       </p>
-      <button class="btn">Que tal clicar aqui?</button>
-    </div>
-
-    <div class="popup">
-      <b class="close">x</b>
-      <div class="profile"></div>
-      <div class="text">
-        <h4>!Happy Birthday!</h4>
-        <h3>Kawaii</h3>
-        <i class="fas fa-birthday-cake"></i>
-      </div>
+      <button>Register</button>
     </div>
     
   </main>
   
   <footer>
+    <div class="social-icons">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+    </div>
+    <div class="down">
       <p class="attribution">
-          Coded by <a href="https://github.com/misaellopes01" target="_blank">Misael Lopes</a>.
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/misaellopes01" target="_blank">Misael Lopes</a>.
       </p>
+    </div>
+    
   </footer>
-
-  <canvas id="my-canvas"></canvas>
-
-  <script src="./assets/index.min.js"></script>
-
-  <script>
-    let btn = document.querySelector('.btn')
-    let popup = document.querySelector('.popup')
-    let close = document.querySelector('.close')
-    let conf = document.querySelector('#my-canvas')
-    btn.onclick = function(){
-      popup.classList.add('active')
-      conf.classList.add('active')
-    }
-
-    close.onclick = function(){
-      popup.classList.remove('active')
-      conf.classList.remove('active')
-    }
-
-    var confettiSettings = { target: 'my-canvas' };
-    var confetti = new ConfettiGenerator(confettiSettings);
-    confetti.render();
-
-  </script>
 </body>
 </html>
